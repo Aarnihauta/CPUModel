@@ -10,7 +10,8 @@ var commands = new ICommand[]
     new PutToRegisterCommand(0, 10),
     new PutToRegisterCommand(1, 5),
     new AddCommand(0),
-    new SubstractCommand(0)
+    new SubstractCommand(0),
+    new GtCommand(0)
 };
 
 foreach(var command in commands)
