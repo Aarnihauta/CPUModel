@@ -8,11 +8,12 @@ public class PutToRegisterCommand : ICommand
     private readonly int _constant;
     public PutToRegisterCommand(int register, int constant)
     {
-
+        _registerToWrite = register;
+        _constant = constant;
     }
     public void Dump()
     {
-        Console.WriteLine($"put reg{_registerToWrite} {_constant}");
+        Console.Write($"put reg{_registerToWrite} {_constant}");
     }
 
     public void Execute(int[] registers)
