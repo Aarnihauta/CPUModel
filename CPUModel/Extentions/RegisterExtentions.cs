@@ -4,6 +4,8 @@ public static class RegisterExtentions
 {
     public static void Dump(this int[] registers)
     {
-        Console.Write($"{registers[0]} {registers[1]}");
+        foreach (var register in registers)
+            Console.Write(register + " ");
+
     }
 }
