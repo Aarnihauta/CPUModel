@@ -20,9 +20,10 @@ namespace CPUModel.Commands.Base
             Console.Write($"{_commandName} r{_toResultRegister}");
         }
 
-        public void Execute(int[] registers)
+        public void Execute(int[] registers, ref int currentCommandIndex)
         {
             registers[_toResultRegister] = ExecuteBinaryCommand(registers[0], registers[1]);
+            currentCommandIndex++;
         }
         protected abstract int ExecuteBinaryCommand(int left, int right);
     }

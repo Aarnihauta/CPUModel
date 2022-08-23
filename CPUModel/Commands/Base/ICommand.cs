@@ -2,5 +2,5 @@
 public interface ICommand
 {
     void Dump();
-    void Execute(int[] registers);
+    void Execute(int[] registers, ref int currentCommandIndex);
 }

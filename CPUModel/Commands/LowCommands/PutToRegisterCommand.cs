@@ -16,8 +16,9 @@ public class PutToRegisterCommand : ICommand
         Console.Write($"put reg{_registerToWrite} {_constant}");
     }
 
-    public void Execute(int[] registers)
+    public void Execute(int[] registers, ref int currentCommandIndex)
     {
         registers[_registerToWrite] = _constant;
+        currentCommandIndex++;
     }
 }
