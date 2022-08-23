@@ -1,6 +1,6 @@
 ﻿using CPUModel.Commands.Base;
 
-namespace CPUModel.Commands.LowCommands;
+namespace CPUModel.Commands.LowCommands.Binary;
 
 public class AddCommand : BinaryCommand
 {
